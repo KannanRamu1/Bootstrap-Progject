@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Website with Cards</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    section {
+      padding: 50px;
+    }
+    .jumbotron {
+      background-color: #f8f9fa;
+      padding: 2rem 1rem;
+      margin-bottom: 2rem;
+    }
+    .showtimes span {
+      margin-right: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Movie Assignemnt</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#showtimes">Showtimes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#deals">Deals</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Jumbotron Section -->
+  <div class="jumbotron text-center">
+    <h1>Welcome to Our Movie Theater!</h1>
+    <p>Enjoy the latest movies and great deals.</p>
+  </div>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Us</h2>
+    <p>Welcome to our website, your ultimate destination for the latest blockbusters, timeless classics, and unbeatable deals! At CinemaTime, we’re dedicated to bringing you the best movie-watching experience with cutting-edge sound systems, crystal-clear visuals, and a cozy atmosphere.
+
+What We Offer
+Exciting Movie Lineup: From action-packed adventures to heartwarming tales, we showcase a diverse range of movies that cater to every taste.
+Convenient Showtimes: With multiple showtimes available throughout the day, we make it easy for you to catch your favorite films at your convenience.
+Exclusive Deals: Enjoy special discounts on tickets, snack combos, and family bundles to make your movie night extra memorable.</p>
+  </section>
+
+  <!-- Showtimes Section -->
+  <section id="showtimes">
+    <h2>Showtimes</h2>
+    <p>Check out the latest movies showing at our theater:</p>
+
+    <!-- Bootstrap Cards -->
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <!-- Card 1: Kong: Skull Island -->
+      <div class="col">
+        <div class="card h-100">
+          <img src="https://cdn.theatlantic.com/thumbor/Auah2go40LwPmGgiIlhR3Co7D8M=/446x49:2404x1150/1600x900/media/img/mt/2017/03/KG_FP_030_rbc/original.jpg" class="card-img-top" alt="Kong: Skull Island">
+          <div class="card-body">
+            <h5 class="card-title">Kong: Skull Island</h5>
+            <p class="card-text">A team of scientists and soldiers venture into an uncharted island, only to encounter the mythic Kong in this thrilling action-packed adventure.</p>
+            <!-- Pill Badges for Kong: Skull Island -->
+            <div class="showtimes">
+              <span class="badge rounded-pill bg-info">12:00 p.m.</span>
+              <span class="badge rounded-pill bg-info">1:30 p.m.</span>
+              <span class="badge rounded-pill bg-info">3:00 p.m.</span>
+              <span class="badge rounded-pill bg-info">5:30 p.m.</span>
+              <span class="badge rounded-pill bg-info">7:00 p.m.</span>
+              <span class="badge rounded-pill bg-info">9:30 p.m.</span>
+            </div>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Showtime: 7:00 PM</small>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2: Ghost in the Shell -->
+      <div class="col">
+        <div class="card h-100">
+          <img src="https://media.gq.com/photos/58dd6d0ebf444b06a49ccfbe/4:3/w_2400,h_1800,c_limit/scarlett_johansson_ghost_in_the_shell-wide.jpg" class="card-img-top" alt="Ghost in the Shell">
+          <div class="card-body">
+            <h5 class="card-title">Ghost in the Shell</h5>
+            <p class="card-text">A cyber-enhanced soldier leads an elite task force to stop the world’s most dangerous criminals, discovering a dark conspiracy behind her creation.</p>
+            <!-- Pill Badges for Ghost in the Shell -->
+            <div class="showtimes">
+              <span class="badge rounded-pill bg-info">12:00 p.m.</span>
+              <span class="badge rounded-pill bg-info">1:30 p.m.</span>
+              <span class="badge rounded-pill bg-info">3:00 p.m.</span>
+              <span class="badge rounded-pill bg-info">5:30 p.m.</span>
+              <span class="badge rounded-pill bg-info">7:00 p.m.</span>
+              <span class="badge rounded-pill bg-info">9:30 p.m.</span>
+            </div>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Showtime: 9:00 PM</small>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3: Beauty and the Beast -->
+      <div class="col">
+        <div class="card h-100">
+          <img src="https://www.intofilm.org/intofilm-production/3165/scaledcropped/1170x548/resources/3165/beauty-and-the-beast-2017.jpg" class="card-img-top" alt="Beauty and the Beast">
+          <div class="card-body">
+            <h5 class="card-title">Beauty and the Beast</h5>
+            <p class="card-text">An enchanting tale of a young woman who falls in love with a cursed prince, breaking the spell through her bravery and compassion.</p>
+            <!-- Pill Badges for Beauty and the Beast -->
+            <div class="showtimes">
+              <span class="badge rounded-pill bg-info">12:00 p.m.</span>
+              <span class="badge rounded-pill bg-info">1:30 p.m.</span>
+              <span class="badge rounded-pill bg-info">3:00 p.m.</span>
+              <span class="badge rounded-pill bg-info">5:30 p.m.</span>
+              <span class="badge rounded-pill bg-info">7:00 p.m.</span>
+              <span class="badge rounded-pill bg-info">9:30 p.m.</span>
+            </div>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Showtime: 10:30 PM</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Deals Section -->
+  <section id="deals">
+    <h2>Deals</h2>
+    <p>There are no current deals at the moment, when deals arrise we will update it in this section.</p>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
